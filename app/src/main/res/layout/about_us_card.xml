@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        android:elevation="15dp"
+        android:layout_margin="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cardLinearLayout"
+            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.8"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/teamMateName"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/skill1"
+            />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="@android:color/white"
+          android:textSize="18dp"
+          android:id="@+id/skill2"
+          />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mainpic"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:id="@+id/desireImage"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
